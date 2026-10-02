@@ -14,6 +14,7 @@
     ],
     '원가': ['[원가] 원가계산', '[원가] 원가분석'],
     'AI': [
+      ['[AI] 에이전트 현황', 'agent_list.html'],
       ['[AI] 에이전트 등록안', 'agent_register.html'],
       ['[AI] 조직 승인', 'allow_agent.html'],
       ['[AI] 실행 이력', 'condition_log.html']
