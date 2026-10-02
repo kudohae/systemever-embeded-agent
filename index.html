@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>재고현황조회 | SystemEver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="업무 메뉴">
+      <div class="sidebar-star">☆</div>
+      <div class="sidebar-collapse">⌃</div>
+      <button type="button" class="module" data-module="인사/급여"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a7 7 0 0 1 14 0v2M3 6l2-2M21 6l-2-2"/></svg><span>인사/급여</span></button><button type="button" class="module" data-module="회계"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h7"/></svg><span>회계</span></button><button type="button" class="module" data-module="영업/수출"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V4h10v3M3 12h18M10 12v2h4v-2"/></svg><span>영업/수출</span></button><button type="button" class="module" data-module="구매/수입"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h3l2.5 10h11L21 8H6M9 20h.01M18 20h.01"/><path d="M12 2v6M9 5h6"/></svg><span>구매/수입</span></button><button type="button" class="module" data-module="생산/외주"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9l6 4V9l6 4V5l6-2v17H3Z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg><span>생산/외주</span></button><button type="button" class="module selected" data-module="물류"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 10h16M8 14h8M8 17h5"/></svg><span>물류</span></button><button type="button" class="module" data-module="원가"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h6M9 11h2M14 11h1M9 15h2M14 15h1"/></svg><span>원가</span></button><button type="button" class="module" data-module="AI"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 10h.01M15 10h.01M9 14c1.5 1.5 4.5 1.5 6 0M12 2v3M2 12h3M19 12h3"/></svg><span>AI</span></button><button type="button" class="module" data-module="운영기본"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>운영기본</span></button>
+      <div class="sidebar-bottom">⌄</div>
+    </aside>
+    <main class="workspace">
+      <div class="tabstrip">
+        <div class="quick-icons"><span>⌂</span><span>▱</span><span>☆</span></div>
+        <div class="active-tab"><span>재고현황조회</span><span class="tab-meta">⚙ ◻ ×</span></div>
+        <div class="tab-spacer"></div>
+        <a class="ai-entry" href="conversation.html" aria-label="AI 업무 대화 열기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v13H8l-5 4zM7 9h10M7 13h7"/></svg><span>AI에게 업무 요청</span></a>
+        <div class="top-chevron">⌄</div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="8" r="3"/><path d="M4 21v-2a7 7 0 0 1 14 0v2M19 5v5M16.5 7.5h5"/></svg></div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5zM10 20h4"/></svg></div>
+        <div class="top-action help">?</div>
+      </div>
+      <div class="toolbar"><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 4 4"/></svg>조회</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h12v12H2zM2 6h12M2 10h12M6 2v12M10 2v12"/></svg>엑셀</span><span class="toolbar-spacer"></span><span class="toolbar-context">명림산업 · A사업장 · 김담당</span><span class="tool-dots">⋮</span></div>
+      <div class="page-content">
+        <div class="erp-panel"><div class="panel-title">조회조건</div><div class="filter-grid"><div class="field required"><label>사업단위</label><div class="fake-input select">본사</div></div><div class="field required"><label>기준일</label><div class="fake-input">2026-10-02</div></div><div class="field required"><label>재고기준</label><div class="fake-input select">실재고</div></div><div class="field"><label>창고</label><div class="fake-input lookup"></div></div><div class="field"><label>품목자산분류</label><div class="fake-input select"></div></div><div class="field"><label>품목대분류</label><div class="fake-input lookup"></div></div><div class="field"><label>품목중분류</label><div class="fake-input lookup"></div></div><div class="field"><label>품목소분류</label><div class="fake-input lookup"></div></div><div class="field"><label>품명</label><div class="fake-input"></div></div><div class="field"><label>품번</label><div class="fake-input"></div></div><div class="field"><label>규격</label><div class="fake-input"></div></div></div></div>
+        <div class="section-heading">추가조회조건</div>
+        <div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>품목자산분류</th><th>품목대분류</th><th>품목중분류</th><th>품명</th><th>품번</th><th>단위</th><th>합계 재고수량</th><th>본사창고</th></tr></thead><tbody>
+        <tr class="total-row"><td class="center">0</td><td colspan="6">TOTAL</td><td class="right">41,009</td><td class="right">170</td></tr>
+<tr><td class="center">1</td><td>상품</td><td>컴퓨터</td><td>공통</td><td>무선마우스</td><td>MOUSE-WL</td><td class="center">EA</td><td class="right">-10</td><td class="right"></td></tr>
+<tr><td class="center">2</td><td>상품</td><td>컴퓨터</td><td>공통</td><td>무선키보드</td><td>KEYBOARD-WL</td><td class="center">EA</td><td class="right">-100</td><td class="right"></td></tr>
+<tr><td class="center">3</td><td>상품</td><td>컴퓨터</td><td>모니터</td><td>27인치 모니터</td><td>MON-27</td><td class="center">EA</td><td class="right">-202</td><td class="right"></td></tr>
+<tr><td class="center">4</td><td>상품</td><td>컴퓨터</td><td>모니터</td><td>강화유리</td><td>GLASS-27</td><td class="center">EA</td><td class="right">0</td><td class="right">170</td></tr>
+<tr><td class="center">5</td><td>상품</td><td>컴퓨터</td><td>모니터</td><td>모니터(black)</td><td>MON-BL</td><td class="center">EA</td><td class="right">-120</td><td class="right"></td></tr>
+<tr><td class="center">6</td><td>제품</td><td>컴퓨터</td><td>본체</td><td>미니 PC</td><td>PC-MINI</td><td class="center">EA</td><td class="right">-170</td><td class="right"></td></tr>
+<tr><td class="center">7</td><td>제품</td><td>컴퓨터</td><td>본체</td><td>노트북13</td><td>NB-13</td><td class="center">EA</td><td class="right">-400</td><td class="right"></td></tr>
+<tr><td class="center">8</td><td>제품</td><td>컴퓨터</td><td>본체</td><td>노트북15</td><td>NB-15</td><td class="center">EA</td><td class="right">-750</td><td class="right"></td></tr>
+<tr><td class="center">9</td><td>제품</td><td>컴퓨터</td><td>디스크탑</td><td>32인치 LCD</td><td>32LC4601</td><td class="center">EA</td><td class="right">-50</td><td class="right"></td></tr>
+<tr><td class="center">10</td><td>제품</td><td>컴퓨터</td><td>디스크탑</td><td>46인치 LED</td><td>46LE5650</td><td class="center">EA</td><td class="right">-200</td><td class="right"></td></tr>
+<tr><td class="center">11</td><td>제품</td><td>컴퓨터</td><td>디스크탑</td><td>70인치 LED</td><td>70LE5650</td><td class="center">EA</td><td class="right">-20</td><td class="right"></td></tr>
+<tr class="selected-row"><td class="center">12</td><td>상품</td><td>포장재</td><td>박스</td><td>골판지 박스 500×400×300</td><td>BOX-500400300</td><td class="center">EA</td><td class="right">420</td><td class="right"></td></tr>
+        </tbody></table><div class="grid-footer"><span>조회 12건 / 전체 457건</span><span>기준일 2026-10-02 · 단위 EA</span></div></div>
+      </div>
+    </main>
+  </div>
+  <script src="navigation.js" defer></script>
+</body>
+</html>

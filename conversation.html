@@ -11,7 +11,7 @@
     <aside class="sidebar" aria-label="업무 메뉴">
       <div class="sidebar-star">☆</div>
       <div class="sidebar-collapse">⌃</div>
-      <div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a7 7 0 0 1 14 0v2M3 6l2-2M21 6l-2-2"/></svg><span>인사/급여</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h7"/></svg><span>회계</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V4h10v3M3 12h18M10 12v2h4v-2"/></svg><span>영업/수출</span></div><div class="module selected"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h3l2.5 10h11L21 8H6M9 20h.01M18 20h.01"/><path d="M12 2v6M9 5h6"/></svg><span>구매/수입</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9l6 4V9l6 4V5l6-2v17H3Z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg><span>생산/외주</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 10h16M8 14h8M8 17h5"/></svg><span>물류</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h6M9 11h2M14 11h1M9 15h2M14 15h1"/></svg><span>원가</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>운영기본</span></div>
+      <button type="button" class="module" data-module="인사/급여"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a7 7 0 0 1 14 0v2M3 6l2-2M21 6l-2-2"/></svg><span>인사/급여</span></button><button type="button" class="module" data-module="회계"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h7"/></svg><span>회계</span></button><button type="button" class="module" data-module="영업/수출"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V4h10v3M3 12h18M10 12v2h4v-2"/></svg><span>영업/수출</span></button><button type="button" class="module" data-module="구매/수입"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h3l2.5 10h11L21 8H6M9 20h.01M18 20h.01"/><path d="M12 2v6M9 5h6"/></svg><span>구매/수입</span></button><button type="button" class="module" data-module="생산/외주"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9l6 4V9l6 4V5l6-2v17H3Z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg><span>생산/외주</span></button><button type="button" class="module" data-module="물류"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 10h16M8 14h8M8 17h5"/></svg><span>물류</span></button><button type="button" class="module" data-module="원가"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h6M9 11h2M14 11h1M9 15h2M14 15h1"/></svg><span>원가</span></button><button type="button" class="module selected" data-module="AI"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 10h.01M15 10h.01M9 14c1.5 1.5 4.5 1.5 6 0M12 2v3M2 12h3M19 12h3"/></svg><span>AI</span></button><button type="button" class="module" data-module="운영기본"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>운영기본</span></button>
       <div class="sidebar-bottom">⌄</div>
     </aside>
     <main class="workspace">
@@ -19,6 +19,7 @@
         <div class="quick-icons"><span>⌂</span><span>▱</span><span>☆</span></div>
         <div class="active-tab"><span>AI 업무 대화</span><span class="tab-meta">⚙ ◻ ×</span></div>
         <div class="tab-spacer"></div>
+        <a class="ai-entry" href="conversation.html" aria-label="AI 업무 대화 열기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v13H8l-5 4zM7 9h10M7 13h7"/></svg><span>AI에게 업무 요청</span></a>
         <div class="top-chevron">⌄</div>
         <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></div>
         <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="8" r="3"/><path d="M4 21v-2a7 7 0 0 1 14 0v2M19 5v5M16.5 7.5h5"/></svg></div>
@@ -55,5 +56,6 @@
       </div>
     </main>
   </div>
+  <script src="navigation.js" defer></script>
 </body>
 </html>
