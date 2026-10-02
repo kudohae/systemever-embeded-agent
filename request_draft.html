@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>구매요청 초안 | SystemEver 시연</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="업무 메뉴">
+      <div class="sidebar-star">☆</div>
+      <div class="sidebar-collapse">⌃</div>
+      <div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a7 7 0 0 1 14 0v2M3 6l2-2M21 6l-2-2"/></svg><span>인사/급여</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h7"/></svg><span>회계</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V4h10v3M3 12h18M10 12v2h4v-2"/></svg><span>영업/수출</span></div><div class="module selected"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h3l2.5 10h11L21 8H6M9 20h.01M18 20h.01"/><path d="M12 2v6M9 5h6"/></svg><span>구매/수입</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9l6 4V9l6 4V5l6-2v17H3Z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg><span>생산/외주</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 10h16M8 14h8M8 17h5"/></svg><span>물류</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h6M9 11h2M14 11h1M9 15h2M14 15h1"/></svg><span>원가</span></div><div class="module"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>운영기본</span></div>
+      <div class="sidebar-bottom">⌄</div>
+    </aside>
+    <main class="workspace">
+      <div class="tabstrip">
+        <div class="quick-icons"><span>⌂</span><span>▱</span><span>☆</span></div>
+        <div class="active-tab"><span>구매요청 초안</span><span class="tab-meta">⚙ ◻ ×</span></div>
+        <div class="tab-spacer"></div>
+        <div class="top-chevron">⌄</div>
+        <div class="top-action">⌕</div><div class="top-action">♙</div><div class="top-action">♧</div><div class="top-action help">?</div>
+      </div>
+      <div class="toolbar"><span class="tool"><span>▣</span>조회</span><span class="tool"><span>▣</span>초안저장</span><span class="tool"><span>▣</span>검토요청</span><span class="toolbar-spacer"></span><span class="demo-tag">정적 시연 화면 · 가상 데이터</span><span class="tool-dots">⋮</span></div>
+      <div class="page-content">
+        <div class="erp-panel"><div class="panel-title">구매요청 기본정보</div><div class="filter-grid"><div class="field"><label>요청번호</label><div class="fake-input muted">PR-20261002-0042</div></div><div class="field"><label>작성일</label><div class="fake-input">2026-10-02</div></div><div class="field required"><label>요청사업장</label><div class="fake-input select">A사업장</div></div><div class="field required"><label>진행상태</label><div class="fake-input">담당자 확인 대기</div></div><div class="field"><label>작성주체</label><div class="fake-input lookup">AG-PUR-001</div></div><div class="field"><label>업무 책임자</label><div class="fake-input lookup">김담당 · 구매팀</div></div><div class="field"><label>근거 실행</label><div class="fake-input lookup">RUN-20261002-001</div></div><div class="field"><label>결재상신</label><div class="fake-input muted">미실행</div></div></div></div>
+        <div class="section-heading">구매요청 품목 내역 <span class="section-meta">초안 · 결재 전</span></div>
+<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>품목코드</th><th>품목명</th><th>규격</th><th>요청수량</th><th>단위</th><th>제안 거래처</th><th>단가</th><th>공급가액</th><th>희망 납기</th><th>상태</th></tr></thead><tbody><tr class="selected-row"><td class="center">1</td><td>BOX-500400300</td><td>골판지 박스</td><td>500×400×300</td><td class="right important">310</td><td class="center">EA</td><td>한빛포장</td><td class="right">1,200원</td><td class="right important">372,000원</td><td class="center">7일 이내</td><td class="center"><span class="status-pill orange">확인 대기</span></td></tr><tr class="total-row"><td colspan="8">합계 · VAT 별도</td><td class="right">372,000원</td><td colspan="2"></td></tr></tbody></table><div class="grid-footer"><span>시연용 구매요청 초안 1건</span><span>자동 발주·지급 미실행</span></div></div>
+<div class="content-columns wide-left">
+  <section class="erp-panel"><div class="panel-title">작성 근거 및 담당자 확인사항</div><div class="panel-body">
+    <table class="form-table"><tr><th>재고 판단</th><td>예상가용재고 340 EA ≤ 안전재고 400 EA</td></tr><tr><th>수량 산정</th><td>목표재고 650 EA − 예상가용재고 340 EA = 310 EA</td></tr><tr><th>거래처 제안</th><td>한빛포장 · 단가 1,200원 · 평균 납기 5일</td></tr><tr><th>대안 비교</th><td>새봄패키지 · 단가 1,150원 · 평균 납기 9일로 요구 납기 초과</td></tr><tr><th>확인 필요</th><td>최근 단가와 실제 납기 재확인, 구매수량·거래처 최종 결정</td></tr></table>
+    <p class="section-caption">이 화면은 에이전트가 만든 초안입니다. 담당자가 근거를 확인하고 수정한 뒤에만 기존 결재 절차로 넘깁니다.</p>
+  </div></section>
+  <section class="erp-panel"><div class="panel-title">승인 및 실행 상태</div><div class="panel-body">
+    <table class="form-table"><tr><th>초안 작성</th><td><span class="status-pill green">완료 09:01</span></td></tr><tr><th>담당자 검토</th><td><span class="status-pill orange">대기 중</span></td></tr><tr><th>결재상신</th><td><span class="status-pill gray">미실행</span></td></tr><tr><th>발주 / 지급</th><td><span class="status-pill red">에이전트 권한 없음</span></td></tr><tr><th>실행 이력</th><td>RUN-20261002-001 · 명세 v1</td></tr></table>
+    <div class="divider"></div><span class="visual-button primary">담당자 확인 후 결재상신</span><span class="visual-button light">초안 수정</span><span class="visual-button disabled">자동 발주</span>
+    <p class="small-note">버튼은 정적 시연용 표시이며 실제 업무를 실행하지 않습니다.</p>
+  </div></section>
+</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
