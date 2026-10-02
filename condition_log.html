@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 에이전트 실행 이력 | SystemEver</title>
+  <title>AI 에이전트 실행 상세 | SystemEver</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <main class="workspace">
       <div class="tabstrip">
         <div class="quick-icons"><span>⌂</span><span>▱</span><span>☆</span></div>
-        <div class="active-tab"><span>AI 에이전트 실행 이력</span><span class="tab-meta">⚙ ◻ ×</span></div>
+        <a class="inactive-tab" href="execution_list.html">실행 이력 <span>×</span></a><div class="active-tab"><span>실행 상세</span><span class="tab-meta">⚙ ◻ ×</span></div>
         <div class="tab-spacer"></div>
         <a class="ai-entry" href="conversation.html" aria-label="AI 업무 대화 열기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v13H8l-5 4zM7 9h10M7 13h7"/></svg><span>AI에게 업무 요청</span></a>
         <div class="top-chevron">⌄</div>
@@ -28,9 +28,7 @@
       </div>
       <div class="toolbar"><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 4 4"/></svg>조회</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h9l2 2v10H3zM5 6h7M5 9h7M5 12h5"/></svg>실행상세</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h12v12H2zM2 6h12M2 10h12M6 2v12M10 2v12"/></svg>엑셀</span><span class="toolbar-spacer"></span><span class="toolbar-context">명림산업 · A사업장 · 김담당</span><span class="tool-dots">⋮</span></div>
       <div class="page-content">
-        <div class="erp-panel"><div class="panel-title">조회조건</div><div class="filter-grid"><div class="field"><label>에이전트 ID</label><div class="fake-input lookup">AG-PUR-001</div></div><div class="field"><label>사업장</label><div class="fake-input select">A사업장</div></div><div class="field"><label>실행일</label><div class="fake-input">2026-10-02</div></div><div class="field"><label>실행상태</label><div class="fake-input select">전체</div></div></div></div>
-        <div class="section-heading">조건 감지 및 실행 이력 <span class="section-meta">조회 2건 · 최신순</span></div>
-<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>실행 ID</th><th>감지시각</th><th>실행유형</th><th>품목</th><th>예상가용재고</th><th>안전재고</th><th>처리상태</th><th>초안번호</th><th>명세버전</th></tr></thead><tbody><tr class="selected-row"><td class="center">1</td><td>RUN-20261002-001</td><td class="center">2026-10-02 09:00</td><td class="center">정기점검</td><td>BOX-500400300</td><td class="right warn">340 EA</td><td class="right">400 EA</td><td class="center"><span class="status-pill green">초안 생성</span></td><td>PR-20261002-0042</td><td class="center">v1</td></tr><tr><td class="center">2</td><td>RUN-20261002-002</td><td class="center">2026-10-02 09:05</td><td class="center">재고 갱신</td><td>BOX-500400300</td><td class="right">340 EA</td><td class="right">400 EA</td><td class="center"><span class="status-pill gray">중복 제외</span></td><td>기존 초안 참조</td><td class="center">v1</td></tr></tbody></table><div class="grid-footer"><span>선택 RUN-20261002-001</span><span>조회조건: A사업장 · BOX-500400300</span></div></div>
+        <div class="erp-panel"><div class="panel-title">실행 기본정보</div><div class="filter-grid"><div class="field"><label>실행 ID</label><div class="fake-input muted">RUN-20261002-001</div></div><div class="field"><label>에이전트 ID</label><div class="fake-input lookup">AG-PUR-001</div></div><div class="field"><label>감지시각</label><div class="fake-input">2026-10-02 09:00</div></div><div class="field"><label>처리상태</label><div class="fake-input">초안 생성</div></div><div class="field"><label>실행유형</label><div class="fake-input">정기점검</div></div><div class="field"><label>대상품목</label><div class="fake-input lookup">BOX-500400300</div></div><div class="field"><label>명세버전</label><div class="fake-input muted">v1</div></div><div class="field"><label>사업장</label><div class="fake-input select">A사업장</div></div></div></div>
 <div class="content-columns">
   <section class="erp-panel"><div class="panel-title">선택 실행의 데이터와 계산 근거</div><div class="panel-body">
     <table class="form-table"><tr><th>자료 기준시각</th><td>2026-10-02 09:00</td><th>조회 범위</th><td>A사업장 · 해당 품목</td></tr><tr><th>현재고</th><td>420 EA</td><th>예약출고</th><td>160 EA</td></tr><tr><th>확정입고예정</th><td>80 EA</td><th>안전재고</th><td>400 EA</td></tr></table>

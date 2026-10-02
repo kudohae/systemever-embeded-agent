@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 에이전트 승인 | SystemEver</title>
+  <title>AI 에이전트 승인 상세 | SystemEver</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <main class="workspace">
       <div class="tabstrip">
         <div class="quick-icons"><span>⌂</span><span>▱</span><span>☆</span></div>
-        <div class="active-tab"><span>AI 에이전트 승인</span><span class="tab-meta">⚙ ◻ ×</span></div>
+        <a class="inactive-tab" href="approval_list.html">조직 승인 <span>×</span></a><div class="active-tab"><span>승인 상세</span><span class="tab-meta">⚙ ◻ ×</span></div>
         <div class="tab-spacer"></div>
         <a class="ai-entry" href="conversation.html" aria-label="AI 업무 대화 열기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v13H8l-5 4zM7 9h10M7 13h7"/></svg><span>AI에게 업무 요청</span></a>
         <div class="top-chevron">⌄</div>
@@ -28,9 +28,7 @@
       </div>
       <div class="toolbar"><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 4 4"/></svg>조회</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h9l2 2v10H3zM5 6h7M5 9h7M5 12h5"/></svg>승인이력</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 14 3v4c0 4-2.5 6-6 8-3.5-2-6-4-6-8V3zM5 8l2 2 4-4"/></svg>권한검토</span><span class="toolbar-spacer"></span><span class="toolbar-context">명림산업 · A사업장 · 김담당</span><span class="tool-dots">⋮</span></div>
       <div class="page-content">
-        <div class="erp-panel"><div class="panel-title">조회조건</div><div class="filter-grid"><div class="field"><label>사업장</label><div class="fake-input select">A사업장</div></div><div class="field"><label>승인상태</label><div class="fake-input select">승인 완료</div></div><div class="field"><label>등록번호</label><div class="fake-input lookup">DRAFT-018</div></div><div class="field"><label>요청일</label><div class="fake-input">2026-10-02</div></div></div></div>
-        <div class="section-heading">AI 에이전트 승인 내역 <span class="section-meta">조회 1건</span></div>
-<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>등록번호</th><th>에이전트명</th><th>대상사업장</th><th>제안자</th><th>승인자</th><th>요청시각</th><th>승인시각</th><th>승인상태</th><th>발급 ID</th></tr></thead><tbody><tr class="selected-row"><td class="center">1</td><td>DRAFT-018</td><td>포장재 재고·구매요청</td><td class="center">A사업장</td><td class="center">김담당</td><td class="center">박승인</td><td class="center">08:38</td><td class="center">08:45</td><td class="center"><span class="status-pill green">승인 완료</span></td><td class="important">AG-PUR-001</td></tr></tbody></table><div class="grid-footer"><span>선택 1건 / 전체 1건</span><span>명세 버전 v1</span></div></div>
+        <div class="erp-panel"><div class="panel-title">승인 결과</div><div class="filter-grid"><div class="field"><label>등록번호</label><div class="fake-input muted">DRAFT-018</div></div><div class="field"><label>승인상태</label><div class="fake-input">승인 완료</div></div><div class="field"><label>발급 ID</label><div class="fake-input lookup">AG-PUR-001</div></div><div class="field"><label>승인일시</label><div class="fake-input">2026-10-02 08:45</div></div></div></div>
 <div class="content-columns wide-left">
   <section class="erp-panel"><div class="panel-title">승인 대상 동작 명세</div><div class="panel-body">
     <table class="form-table"><tr><th>에이전트명</th><td>포장재 재고·구매요청</td><th>운영기간</th><td>2026-10-02 ~ 2026-12-31</td></tr><tr><th>실행조건</th><td>예상가용재고 ≤ 안전재고 400 EA</td><th>실행주기</th><td>매일 09:00 / 재고 갱신 시</td></tr><tr><th>대상 범위</th><td colspan="3">A사업장 · BOX-500400300</td></tr><tr><th>허용 기능</th><td colspan="3">재고·구매이력·거래처 조회 / 구매요청 초안 생성 / 담당자 검토 요청</td></tr><tr><th>금지 기능</th><td colspan="3">결재상신 / 발주 확정 / 지급 / 타 사업장 조회</td></tr><tr><th>승인 조건</th><td colspan="3">자료 누락 또는 충돌 시 실행 중지. 결재상신은 담당자 확인 뒤 별도 수행.</td></tr></table>

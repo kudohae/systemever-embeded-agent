@@ -15,9 +15,10 @@
     '원가': ['[원가] 원가계산', '[원가] 원가분석'],
     'AI': [
       ['[AI] 에이전트 현황', 'agent_list.html'],
-      ['[AI] 에이전트 등록안', 'agent_register.html'],
-      ['[AI] 조직 승인', 'allow_agent.html'],
-      ['[AI] 실행 이력', 'condition_log.html']
+      ['[AI] 등록안 관리', 'registration_list.html'],
+      ['[AI] 조직 승인', 'approval_list.html'],
+      ['[AI] 실행 이력', 'execution_list.html'],
+      ['[AI] 확인 필요 업무', 'attention_list.html']
     ],
     '운영기본': ['[운영기본] 사용자관리', '[운영기본] 권한관리', '[운영기본] 코드관리']
   };
