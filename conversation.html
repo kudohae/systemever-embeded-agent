@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 업무 대화 | SystemEver 시연</title>
+  <title>AI 업무 대화 | SystemEver</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,9 +20,12 @@
         <div class="active-tab"><span>AI 업무 대화</span><span class="tab-meta">⚙ ◻ ×</span></div>
         <div class="tab-spacer"></div>
         <div class="top-chevron">⌄</div>
-        <div class="top-action">⌕</div><div class="top-action">♙</div><div class="top-action">♧</div><div class="top-action help">?</div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="8" r="3"/><path d="M4 21v-2a7 7 0 0 1 14 0v2M19 5v5M16.5 7.5h5"/></svg></div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5zM10 20h4"/></svg></div>
+        <div class="top-action help">?</div>
       </div>
-      <div class="toolbar"><span class="tool"><span>▣</span>조회</span><span class="tool"><span>▣</span>대화내역</span><span class="tool"><span>▣</span>새 대화</span><span class="toolbar-spacer"></span><span class="demo-tag">정적 시연 화면 · 가상 데이터</span><span class="tool-dots">⋮</span></div>
+      <div class="toolbar"><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 4 4"/></svg>조회</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12v9H5l-3 2zM4 6h8M4 9h6"/></svg>대화내역</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg>새 대화</span><span class="toolbar-spacer"></span><span class="toolbar-context">명림산업 · A사업장 · 김담당</span><span class="tool-dots">⋮</span></div>
       <div class="page-content">
         <div class="erp-panel"><div class="panel-title">조회조건</div><div class="filter-grid"><div class="field required"><label>사업장</label><div class="fake-input select">A사업장</div></div><div class="field required"><label>기준일</label><div class="fake-input">2026-10-02</div></div><div class="field"><label>품목</label><div class="fake-input lookup">BOX-500400300</div></div><div class="field"><label>담당부서</label><div class="fake-input select">구매팀</div></div></div></div>
         <div class="section-heading">AI 업무 대화 <span class="section-meta">대화 ID CHAT-20261002-018</span></div>
@@ -36,12 +39,19 @@
     </div>
     <div class="proposal"><div class="proposal-title">◉ 지속업무로 등록하시겠습니까?</div><p>재고 부족 감지 → 구매자료 조회 → 구매요청 초안 작성. 사용자 검토와 조직 승인이 끝나기 전에는 자동 실행되지 않습니다.</p><span class="visual-button primary">등록안 확인</span><span class="visual-button light">현재 대화만 유지</span></div>
   </div></section>
-  <section class="erp-panel"><div class="panel-title">업무자료 조회 · 시연 데이터 <span class="panel-right">조회시각 2026-10-02 08:31</span></div><div class="panel-body compact">
+  <section class="erp-panel"><div class="panel-title">재고 현황 <span class="panel-right">조회시각 2026-10-02 08:31</span></div><div class="panel-body compact">
     <table class="form-table"><tr><th>품목명</th><td>골판지 박스 500×400×300</td></tr><tr><th>사업장</th><td>A사업장</td></tr><tr><th>현재고</th><td>420 EA</td></tr><tr><th>예약출고</th><td>160 EA</td></tr><tr><th>확정입고예정</th><td>80 EA</td></tr><tr><th>안전재고</th><td>400 EA</td></tr></table>
     <div class="subhead">최근 구매이력</div><div class="grid-wrap"><table class="erp-table"><thead><tr><th>거래처</th><th>최근 단가</th><th>평균 납기</th><th>최근 구매일</th></tr></thead><tbody><tr><td>한빛포장</td><td class="right">1,200원</td><td class="center">5일</td><td class="center">2026-09-18</td></tr><tr><td>새봄패키지</td><td class="right">1,150원</td><td class="center">9일</td><td class="center">2026-09-12</td></tr></tbody></table></div>
-    <p class="body-note">조회 결과는 시연용 데이터입니다. 실제 ERP 연결 여부는 구현 결과에서 별도로 표시합니다.</p>
+    <p class="body-note">최근 매입단가와 납기 정보는 등록안 생성 시 참고자료로 사용됩니다.</p>
   </div></section>
 </div>
+<div class="section-heading">최근 6개월 구매내역 <span class="section-meta">품목 BOX-500400300 · 조회 4건</span></div>
+<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>구매일</th><th>구매오더번호</th><th>사업장</th><th>품목코드</th><th>거래처</th><th>수량</th><th>단위</th><th>단가</th><th>공급가액</th><th>입고상태</th></tr></thead><tbody>
+<tr><td class="center">1</td><td class="center">2026-09-18</td><td>PO-260918-001</td><td class="center">A사업장</td><td>BOX-500400300</td><td>한빛포장</td><td class="right">500</td><td class="center">EA</td><td class="right">1,200원</td><td class="right">600,000원</td><td class="center">입고완료</td></tr>
+<tr><td class="center">2</td><td class="center">2026-09-12</td><td>PO-260912-004</td><td class="center">A사업장</td><td>BOX-500400300</td><td>새봄패키지</td><td class="right">300</td><td class="center">EA</td><td class="right">1,150원</td><td class="right">345,000원</td><td class="center">입고완료</td></tr>
+<tr><td class="center">3</td><td class="center">2026-08-20</td><td>PO-260820-002</td><td class="center">A사업장</td><td>BOX-500400300</td><td>한빛포장</td><td class="right">400</td><td class="center">EA</td><td class="right">1,210원</td><td class="right">484,000원</td><td class="center">입고완료</td></tr>
+<tr><td class="center">4</td><td class="center">2026-07-16</td><td>PO-260716-003</td><td class="center">A사업장</td><td>BOX-500400300</td><td>새봄패키지</td><td class="right">350</td><td class="center">EA</td><td class="right">1,160원</td><td class="right">406,000원</td><td class="center">입고완료</td></tr>
+</tbody></table><div class="grid-footer"><span>조회 4건</span><span>단가·공급가액은 VAT 별도</span></div></div>
       </div>
     </main>
   </div>

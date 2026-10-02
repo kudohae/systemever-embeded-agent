@@ -107,6 +107,7 @@ body { font-size: 11px; }
   background: #3564bd;
   font-size: 19px;
 }
+.top-action svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .top-action.help { background: #58aee4; }
 .top-chevron { width: 22px; display: grid; place-items: center; color: #4b5258; }
 
@@ -129,9 +130,9 @@ body { font-size: 11px; }
   font-weight: 700;
   white-space: nowrap;
 }
-.tool svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 2; fill: none; }
+.tool svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 1.7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .toolbar-spacer { flex: 1; }
-.demo-tag { color: #e5ebf2; font-size: 10px; padding-right: 11px; letter-spacing: -.2px; }
+.toolbar-context { color: #d9e1e8; font-size: 10px; padding-right: 11px; letter-spacing: -.2px; }
 .tool-dots { font-size: 20px; line-height: 1; padding: 0 8px; border-left: 1px solid #666a70; }
 
 .page-content { padding: 4px 5px 14px; overflow: auto; height: calc(100vh - 72px); min-height: 570px; }
@@ -242,6 +243,7 @@ body { font-size: 11px; }
 .visual-button.primary { background: #4778ba; border-color: #38699f; color: #fff; }
 .visual-button.light { background: #fff; border-color: #c7d0d8; }
 .visual-button.disabled { color: #aeb6bd; background: #f3f4f5; border-color: #d7dce0; }
+.review-check { color: #4d5965; margin-bottom: 10px; font-weight: 700; }
 
 .form-table { width: 100%; border-collapse: collapse; font-size: 11px; }
 .form-table th, .form-table td { border: 1px solid #d8dde2; padding: 7px 9px; height: 30px; }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 에이전트 실행 이력 | SystemEver 시연</title>
+  <title>AI 에이전트 실행 이력 | SystemEver</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,25 +20,30 @@
         <div class="active-tab"><span>AI 에이전트 실행 이력</span><span class="tab-meta">⚙ ◻ ×</span></div>
         <div class="tab-spacer"></div>
         <div class="top-chevron">⌄</div>
-        <div class="top-action">⌕</div><div class="top-action">♙</div><div class="top-action">♧</div><div class="top-action help">?</div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="8" r="3"/><path d="M4 21v-2a7 7 0 0 1 14 0v2M19 5v5M16.5 7.5h5"/></svg></div>
+        <div class="top-action"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5zM10 20h4"/></svg></div>
+        <div class="top-action help">?</div>
       </div>
-      <div class="toolbar"><span class="tool"><span>▣</span>조회</span><span class="tool"><span>▣</span>실행상세</span><span class="tool"><span>▣</span>중복검사</span><span class="toolbar-spacer"></span><span class="demo-tag">정적 시연 화면 · 가상 데이터</span><span class="tool-dots">⋮</span></div>
+      <div class="toolbar"><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 4 4"/></svg>조회</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2h9l2 2v10H3zM5 6h7M5 9h7M5 12h5"/></svg>실행상세</span><span class="tool"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h12v12H2zM2 6h12M2 10h12M6 2v12M10 2v12"/></svg>엑셀</span><span class="toolbar-spacer"></span><span class="toolbar-context">명림산업 · A사업장 · 김담당</span><span class="tool-dots">⋮</span></div>
       <div class="page-content">
         <div class="erp-panel"><div class="panel-title">조회조건</div><div class="filter-grid"><div class="field"><label>에이전트 ID</label><div class="fake-input lookup">AG-PUR-001</div></div><div class="field"><label>사업장</label><div class="fake-input select">A사업장</div></div><div class="field"><label>실행일</label><div class="fake-input">2026-10-02</div></div><div class="field"><label>실행상태</label><div class="fake-input select">전체</div></div></div></div>
         <div class="section-heading">조건 감지 및 실행 이력 <span class="section-meta">조회 2건 · 최신순</span></div>
-<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>실행 ID</th><th>감지시각</th><th>품목</th><th>예상가용재고</th><th>안전재고</th><th>조건</th><th>처리상태</th><th>초안번호</th><th>명세버전</th></tr></thead><tbody><tr class="selected-row"><td class="center">1</td><td>RUN-20261002-001</td><td class="center">2026-10-02 09:00</td><td>BOX-500400300</td><td class="right warn">340 EA</td><td class="right">400 EA</td><td class="center">충족</td><td class="center"><span class="status-pill green">초안 생성</span></td><td>PR-20261002-0042</td><td class="center">v1</td></tr><tr><td class="center">2</td><td>RUN-20261002-002</td><td class="center">2026-10-02 09:05</td><td>BOX-500400300</td><td class="right">340 EA</td><td class="right">400 EA</td><td class="center">충족</td><td class="center"><span class="status-pill gray">중복 건너뜀</span></td><td>기존 초안 참조</td><td class="center">v1</td></tr></tbody></table><div class="grid-footer"><span>선택 RUN-20261002-001</span><span>조회 기준: 시연용 가상 데이터</span></div></div>
+<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">No.</th><th>실행 ID</th><th>감지시각</th><th>실행유형</th><th>품목</th><th>예상가용재고</th><th>안전재고</th><th>처리상태</th><th>초안번호</th><th>명세버전</th></tr></thead><tbody><tr class="selected-row"><td class="center">1</td><td>RUN-20261002-001</td><td class="center">2026-10-02 09:00</td><td class="center">정기점검</td><td>BOX-500400300</td><td class="right warn">340 EA</td><td class="right">400 EA</td><td class="center"><span class="status-pill green">초안 생성</span></td><td>PR-20261002-0042</td><td class="center">v1</td></tr><tr><td class="center">2</td><td>RUN-20261002-002</td><td class="center">2026-10-02 09:05</td><td class="center">재고 갱신</td><td>BOX-500400300</td><td class="right">340 EA</td><td class="right">400 EA</td><td class="center"><span class="status-pill gray">중복 제외</span></td><td>기존 초안 참조</td><td class="center">v1</td></tr></tbody></table><div class="grid-footer"><span>선택 RUN-20261002-001</span><span>조회조건: A사업장 · BOX-500400300</span></div></div>
 <div class="content-columns">
   <section class="erp-panel"><div class="panel-title">선택 실행의 데이터와 계산 근거</div><div class="panel-body">
     <table class="form-table"><tr><th>자료 기준시각</th><td>2026-10-02 09:00</td><th>조회 범위</th><td>A사업장 · 해당 품목</td></tr><tr><th>현재고</th><td>420 EA</td><th>예약출고</th><td>160 EA</td></tr><tr><th>확정입고예정</th><td>80 EA</td><th>안전재고</th><td>400 EA</td></tr></table>
     <div class="calc-box"><div class="small-note">승인된 명세 v1의 계산 규칙</div><div class="equation">420 − 160 + 80 = 340 EA</div><div class="equation warn">340 ≤ 400 → 재고 부족 조건 충족</div><div class="equation">목표재고 650 − 340 = 구매 제안 310 EA</div></div>
-    <div class="body-note">재고·예약출고·입고예정값은 동일한 자료 기준시각으로 묶어 저장합니다. 같은 조건의 미처리 초안이 존재하면 새 초안을 만들지 않습니다.</div>
+    <div class="body-note">확정입고예정 80 EA는 10월 5일 입고 예정분입니다. 동일 품목의 미처리 초안이 있으면 새 초안을 만들지 않습니다.</div>
   </div></section>
   <section class="erp-panel"><div class="panel-title">거래처 후보 비교 및 AI 설명</div><div class="panel-body compact">
-    <div class="grid-wrap"><table class="erp-table"><thead><tr><th>거래처</th><th>단가</th><th>평균 납기</th><th>7일 이내</th><th>판단</th></tr></thead><tbody><tr class="selected-row"><td>한빛포장</td><td class="right">1,200원</td><td class="center">5일</td><td class="center">충족</td><td class="important">추천</td></tr><tr><td>새봄패키지</td><td class="right">1,150원</td><td class="center">9일</td><td class="center">미충족</td><td>대안</td></tr></tbody></table></div>
-    <div class="subhead">추천 근거</div><div class="rule-line">새봄패키지가 개당 50원 저렴하지만 요구 납기 7일을 넘습니다. 한빛포장은 평균 납기 5일로 요구 조건을 충족합니다. 납기 자료는 담당자가 초안에서 다시 확인합니다.</div>
+    <div class="grid-wrap"><table class="erp-table"><thead><tr><th>거래처</th><th>단가</th><th>예상 입고일</th><th>요청납기</th><th>판단</th></tr></thead><tbody><tr class="selected-row"><td>한빛포장</td><td class="right">1,200원</td><td class="center">2026-10-07</td><td class="center">충족</td><td class="important">추천</td></tr><tr><td>새봄패키지</td><td class="right">1,150원</td><td class="center">2026-10-11</td><td class="center">초과</td><td>대안</td></tr></tbody></table></div>
+    <div class="subhead">추천 근거</div><div class="rule-line">요청납기일은 2026-10-09입니다. 새봄패키지는 개당 50원 저렴하지만 예상 입고일이 10-11입니다. 한빛포장은 10-07 입고가 예상돼 납기 조건을 충족합니다.</div>
     <div class="subhead">실행 검증</div><span class="chip allow">권한 검사 통과</span><span class="chip allow">A사업장 범위 일치</span><span class="chip allow">중복 검사 통과</span><span class="chip deny">결재상신 권한 없음</span>
   </div></section>
 </div>
+<div class="section-heading">선택 실행의 처리 단계 <span class="section-meta">RUN-20261002-001</span></div>
+<div class="grid-wrap"><table class="erp-table"><thead><tr><th class="narrow">순서</th><th>처리시각</th><th>업무 단계</th><th>처리 결과</th><th>관련 문서</th></tr></thead><tbody><tr><td class="center">1</td><td class="center">09:00:03</td><td>재고 조건 확인</td><td>예상가용재고 340 EA · 안전재고 400 EA</td><td>재고 조회</td></tr><tr><td class="center">2</td><td class="center">09:00:11</td><td>구매자료 조회</td><td>최근 구매단가·입고예정·거래처 납기 확인</td><td>구매이력 조회</td></tr><tr><td class="center">3</td><td class="center">09:00:42</td><td>거래처·수량 산정</td><td>한빛포장 / 310 EA 제안</td><td>명세 v1</td></tr><tr><td class="center">4</td><td class="center">09:01:05</td><td>구매요청 초안 저장</td><td>담당자 확인 대기로 전환</td><td>PR-20261002-0042</td></tr></tbody></table><div class="grid-footer"><span>정상 완료 4단계</span><span>결재상신 미실행</span></div></div>
       </div>
     </main>
   </div>
